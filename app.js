@@ -5,6 +5,8 @@ app.get('/', (req,res)=>{
     res.send("welcome to azure")
 })
 
-app.listen(8080, ()=>{
+port = process.env.PORT || 8080
+
+app.listen(port, ()=>{
     console.log("Server is running on port 8080")
 })
